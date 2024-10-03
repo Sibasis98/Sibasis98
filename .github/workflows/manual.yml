@@ -1,0 +1,8 @@
+# In your Ansible playbook
+name: Run command on remote server
+  hosts: 172.24.2.3
+  become: yes
+  tasks:
+    name: Excute the file
+      script_path: "/home/sibasis/GITHUB/Sibasis98/cpprog/a.out"
+      shell: ./{{ script_path }}
