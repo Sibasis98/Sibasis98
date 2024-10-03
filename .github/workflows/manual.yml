@@ -1,5 +1,9 @@
 # In your Ansible playbook
 name: Run command on remote server
+  on:
+  push:
+    branches: [Testing]
+
   hosts: 172.24.2.3
   become: yes
   tasks:
