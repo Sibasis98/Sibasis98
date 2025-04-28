@@ -1,0 +1,24 @@
+#preprocessor
+g++ -E hello.cpp -lstdc++ ---> remove comment lines, replace macro, include the header file functions
+Extn - .i 
+    eg- hello.ii
+
+#compiler
+g++ -S hello.ii
+Extn - .s, hello.s -lstdc++ ---> convert to assembly language
+
+#assembler
+g++ -c hello.s    --> machine level code, binaries
+Extn - .o, .obj   --> convert to object file
+
+
+#linker
+Extn - .out, .exe   --> excutable file, link the file like shared object
+
+#loader
+Load the path while executing the executable file
+
+
+
+#To generate the temp files while compiling it
+g++ -Wall -save-temps hello.cpp -lstdc++
